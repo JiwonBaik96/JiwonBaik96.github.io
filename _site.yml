@@ -10,7 +10,7 @@ navbar:
       href: geog176A.html
   right:
     - icon: fa-github
-      href: https://github.com/mikejohnson51/geog176A
+      href: https://github.com/JiwonBaik96
 output:
   html_document:
     theme: cerulean
