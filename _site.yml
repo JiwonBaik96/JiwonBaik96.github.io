@@ -1,15 +1,19 @@
 name: "first-website"
 output_dir: "."
 navbar:
-  title: "My Beautiful Website"
+  title: "Jiwon Baik"
   left:
-    - text: "Home"
+    - text: "About"
       icon: fa-home
       href: index.html
-    - text: "GIS Work"
-      href: geog176A.html
+    - text: "Portfolio"
+      href: portfolio.html
+    - text: "GIS Teaching"
+      href: teaching.html
     - text: "Resume"
       href: data/Resume_JiwonBaik.pdf
+    - text: "Contact"
+      href: contact.html
   right:
     - icon: fa-rocket
       href: https://github.com/JiwonBaik96
