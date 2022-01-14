@@ -8,8 +8,8 @@ navbar:
       href: index.html
     - text: "GIS Work"
       href: geog176A.html
-    - text: "CV"
-      href: cv.html
+    - text: "Resume"
+      href: data/Resume_JiwonBaik.pdf
   right:
     - icon: fa-rocket
       href: https://github.com/JiwonBaik96
