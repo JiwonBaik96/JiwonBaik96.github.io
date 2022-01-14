@@ -6,6 +6,7 @@ title: "Projects"
 
 
 ## 3d Acoustic Propagation Modeling
+- [presentation](data/Sound_Propagation_Model.pdf)
 
 
 
@@ -17,18 +18,30 @@ title: "Projects"
 
 
 ## Fire Evacuation Maps
+```{r echo=FALSE}
+knitr::include_graphics("data/1_staggered.gif")
+```
 
 
 ## Interactive map of Pareto Optimal solutions
 
 
-## [2016 Election data analysis]
+## Geographic Weighted Regression of AODs using Remote Sense Data
+- [report](data/GWR_Spline.pdf)
+
+## 2016 Election data analysis
+
+- [sourcecode](data/2016ElectionCodes.html)
+- [report](data/2016ElectionReport.pdf)
 
 
+## Finding Optimal Locations of Street Lights in LA
+- [sourcecode](data/StreetLightAllocation.html)
 
-## [Building a project website](https://github.com/JiwonBaik96/jay.github.io)
+<center>
+<video width="480" height="320" controls>
+  <source src="data/StreetLightAllocation.mp4" type="video/mp4">
+</video>
+</center>
 
-- In this assignment we built a static users site with Github Pages 
-- Includes a github repo for access to all the code.
-- Look at how high quality my work is!
 

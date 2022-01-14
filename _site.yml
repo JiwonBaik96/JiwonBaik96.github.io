@@ -11,7 +11,7 @@ navbar:
     - text: "GIS Teaching"
       href: teaching.html
     - text: "Resume"
-      href: data/Resume_JiwonBaik.pdf
+      href: data/Resume_JiwonBaik.html
     - text: "Contact"
       href: contact.html
   right:

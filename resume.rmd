@@ -1,0 +1,9 @@
+
+
+
+
+```{r out.height = "100%", out.width="80%", echo=F}
+
+library(knitr)
+knitr::include_graphics("data/Resume_JiwonBaik-1.jpg")
+```
