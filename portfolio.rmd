@@ -8,22 +8,13 @@ output:
     collapsed: false
 ---
 
-<style type="text/css">
-.main-container {
-  max-width: 1800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
-
-
 ---
 
 ## Contents
 
 * 3D Map Features and Spatial Modeling
   - 1.1. 3d Acoustic Propagation Modeling (ongoing)
-  - 1.2. lab project: Extracting indoor details from LIDAR
+  - 1.2. lab project: Extracting indoor details fromLIDAR
 
 * Javascript Map API and Web Building
   - 2.1. Location based Theater and Movie finder
@@ -169,6 +160,8 @@ knitr::include_graphics("data/1_staggered.gif")
 
 ### 3.2. Interactive map of Pareto Optimal solutions
 
+* [solution algorithm](data/swain_sourcecode.html)
+* [interactive map](data/swain_solutions.html)
 
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
 <span>
@@ -182,12 +175,9 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 </p></span>
 </div>
 
-<center>
-```{r, echo=FALSE}
-shiny::includeHTML("data/swain_solutions.html")
-```
-</center>
 
+[![](img/thesis/nondominated.png)](data/swain_solutions.html)
+[![](img/thesis/map.png)](data/swain_solutions.html)
 
 ---
 
@@ -256,7 +246,6 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 ![result table](img/krigging/resulttable.png)
 ![ROOCV](img/krigging/ROOCV.png)
 
----
 
 
 ### 4.2. 2016 Election data analysis
