@@ -85,7 +85,7 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 
 #### [Team project]
 
-- [moviestock website](https://moviestock.herokuapp.com/movies/){target="_blank"}
+- [moviestock website](https://moviestock.herokuapp.com/movies/){target="_blank"}: it takes awhile to load the homepage as using free hosting by Heroku.
 
 
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
