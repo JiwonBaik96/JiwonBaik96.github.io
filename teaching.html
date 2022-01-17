@@ -381,7 +381,7 @@ div.tocify {
 <div id="covid-19-data-wrangling" class="section level2">
 <h2>1. COVID-19 Data Wrangling</h2>
 <ul>
-<li><a href="https://jiwonbaik96.github.io/geog-13-labs/lab-02.html" target="_blank">sourcecode</a></li>
+<li><a href="https://jiwonbaik96.github.io/geog-13-labs/docs/lab-02.html" target="_blank">sourcecode</a></li>
 </ul>
 <div class="warning" style="padding:0.5em; background-color:#DAF2D3; color:#478432">
 <span>
@@ -389,7 +389,7 @@ div.tocify {
 <b>COVID-19 Data Wrangling</b>
 </p>
 <p style="margin-left:1em;">
-<p>In the <strong>lab02</strong>, I worked with COVID-19 data in US, monitoring California’s daily new cases, plotting 4 interesting states’ changes of cases, and evaluating the pandemic trending on space and time. Here is the link of workflow.</p>
+<p>In the <strong>lab02</strong>, students worked with COVID-19 data in US, monitoring California’s daily new cases, plotting 4 interesting states’ changes of cases, and evaluating the pandemic trending on space and time. Here is the link of workflow.</p>
 <p><br></p>
 <ul>
 <li>Students got familiar with Rstudio gradually from practices, for instance, analyzing raw data with packages and plotting, combination of raw data, and extracting the variables from raw data.</li>
@@ -400,13 +400,15 @@ div.tocify {
 </p>
 <p></span></p>
 </div>
-<p><img src="img/weightedmeancenter.png" />]</p>
+<center>
+<img src="img/weightedmeancenter.png" />
+</center>
 <hr />
 </div>
 <div id="distances-and-the-border-zone" class="section level2">
 <h2>2. Distances and the Border Zone</h2>
 <ul>
-<li><a href="https://jiwonbaik96.github.io/geog-13-labs/lab-03.html" target="_blank">sourcecode</a></li>
+<li><a href="https://jiwonbaik96.github.io/geog-13-labs/docs/lab-03.html" target="_blank">sourcecode</a></li>
 </ul>
 <div class="warning" style="padding:0.5em; background-color:#DAF2D3; color:#478432">
 <span>
@@ -414,7 +416,7 @@ div.tocify {
 <b>Distances and the Border Zone</b>
 </p>
 <p style="margin-left:1em;">
-<p>In the <strong>lab03</strong>, I figured out the geographic relationship between US cities and borders of national, states, and near countries. Then I evaluated the 100-mile Border Zone described in <a href="https://www.aclu.org/other/constitution-100-mile-border-zone" target="_blank">ACLU article</a>.</p>
+<p>In the <strong>lab03</strong>, students figured out the geographic relationship between US cities and borders of national, states, and near countries. Then students evaluated the 100-mile Border Zone described in <a href="https://www.aclu.org/other/constitution-100-mile-border-zone" target="_blank">ACLU article</a>.</p>
 <p><br></p>
 <ul>
 <li>Students worked with spatial (sf) objects and coordinate systems and converted from MULTIPOLYGON to MULTILINESTRING geometries, in order to visualize country and state borders.</li>
@@ -424,31 +426,86 @@ div.tocify {
 </p>
 <p></span></p>
 </div>
-<p>Here is my highlight in the project: <img src="img/10popborderzone.png" /></p>
+<center>
+<img src="img/10popborderzone.png" />
+</center>
 <hr />
-<p>In the <strong>lab04</strong>, I started to analyze the geographic points in the polygon, with the functions defined by myself. With the raw data of dams in the United States, I tried to find the relationship between the dam distribution and geographic information.</p>
 </div>
 <div id="tesselations-point-in-polygon" class="section level2">
 <h2>Tesselations, Point-in-Polygon</h2>
 <ul>
+<li><a href="https://jiwonbaik96.github.io/geog-13-labs/docs/lab-04.html" target="_blank">sourcecode</a></li>
+</ul>
+<div class="warning" style="padding:0.5em; background-color:#DAF2D3; color:#478432">
+<span>
+<p style="margin-top:1em; text-align:center">
+<b>COVID-19 Data Wrangling</b>
+</p>
+<p style="margin-left:1em;">
+<p>In the <strong>lab04</strong>, students started to analyze the geographic points in the polygon, with the functions defined by myself. With the raw data of dams in the United States, students tried to find the relationship between the dam distribution and geographic information.</p>
+<p><br></p>
+<ul>
 <li>Students created tessellated surfaces of US county centroids and grid coverages intersected to the boundaries of the contiguous United States.</li>
-<li>Using data from the US Army Corp of Engineers’ National Dam Inventory (NID), Students mapped the spatial distribution of dams in the tessellations, noting that tile size can be deceptive (see: <a href="https://www.gislounge.com/modifiable-areal-unit-problem-gis/">The Modifiable Areal Unit Problem (MAUP)</a>)</li>
+<li>Using data from the US Army Corp of Engineers’ National Dam Inventory (NID), students mapped the spatial distribution of dams in the tessellations, noting that tile size can be deceptive (see: <a href="https://www.gislounge.com/modifiable-areal-unit-problem-gis/">The Modifiable Areal Unit Problem (MAUP)</a>)</li>
 <li>Students created point-in-polygon visualizations for dams of specific purposes, such as recreation and flood control.</li>
 </ul>
-<p>Here is my highlight in the project: <a href="https://jiwonbaik96.github.io/geog-13-labs/lab-04.html" target="_blank" title="click this image to open sourcecode"><img src="img/Lab4FloodControl.png" /></a></p>
+</p>
+<p></span></p>
+</div>
+<center>
+<img src="img/Lab4FloodControl.png" />
+</center>
 <hr />
-<p>In the <strong>lab05</strong>, we learned to use raster layers to analyze the continuous data, a case of flooding in Palo, Iowa. We used the raster pacakge and raster data knowledge to create flood images using multiband Landsat Imagery, thresholding and classification methods.</p>
 </div>
 <div id="raster-and-remote-sensing" class="section level2">
-<h2>Raster and Remote Sensing</h2>
+<h2>4. Raster and Remote Sensing</h2>
 <ul>
-<li>First time I deal with the continuous data with raster data model, and map algebra to analyze elevation, precipitation, and climate.</li>
-<li>In the case of Palo, I use kmean-rasters compared with Landsat band calculating the flooding cells shared by each layers.</li>
-<li>And I extracted a specific location captured by the drone from layers to define its value in the raster data.</li>
+<li><a href="https://jiwonbaik96.github.io/geog-13-labs/docs/lab-05.html" target="_blank">sourcecode</a></li>
 </ul>
-<p>Here is my highlight in the project: <img src="img/mission-creek-fim.gif" /><!-- --></p>
+<div class="warning" style="padding:0.5em; background-color:#DAF2D3; color:#478432">
+<span>
+<p style="margin-top:1em; text-align:center">
+<b>COVID-19 Data Wrangling</b>
+</p>
+<p style="margin-left:1em;">
+<p>In the <strong>lab05</strong>, students learned to use raster layers to analyze the continuous data, a case of flooding in Palo, Iowa. We used the raster pacakge and raster data knowledge to create flood images using multiband Landsat Imagery, thresholding and classification methods.</p>
+<p><br></p>
+<ul>
+<li>First time students deal with the continuous data with raster data model, and map algebra to analyze elevation, precipitation, and climate.</li>
+<li>In the case of Palo, students use kmean-rasters compared with Landsat band calculating the flooding cells shared by each layers.</li>
+<li>And students extracted a specific location captured by the drone from layers to define its value in the raster data.</li>
+</ul>
+</p>
+<p></span></p>
+</div>
+<center>
+<img src="img/lab5highlight.png" />
+</center>
 <hr />
-<p>In the <strong>lab06</strong>, terrain analysis is managed by R coding. We chose Mission Creek’s flood event in 2017 as object, estimating the number of buildings impacted. In the project, I completed the whole analysis from collecting data to the assessment of impacts.</p>
+</div>
+<div id="flood-risk-in-mission-creek-past-present-future" class="section level2">
+<h2>5. Flood Risk in Mission Creek: Past, Present, Future</h2>
+<div class="warning" style="padding:0.5em; background-color:#DAF2D3; color:#478432">
+<span>
+<p style="margin-top:1em; text-align:center">
+<b>COVID-19 Data Wrangling</b>
+</p>
+<p style="margin-left:1em;">
+<p>In the <strong>lab06</strong>, terrain analysis is managed by R coding. Students chose Mission Creek’s flood event in 2017 as object, estimating the number of buildings impacted. In the project, students completed the whole analysis from collecting data to the assessment of impacts.</p>
+<p><br></p>
+<ul>
+<li>Students use OSM data to collect building centroids and the stream linestring.</li>
+<li>with the whitebox, students create hillshade raster of Santa Barbara area and HAND raster for flooding cell values.</li>
+<li>The correcting of elevation is important in the data, which will impact the precision of analysis.</li>
+<li>In the final step, students overlay all raster layers into one, indicating the impacted buildings when the creek flooded.</li>
+<li>students also create a gif for Mission Creek’s flood inundation map library from 0 to 20 foot.</li>
+</ul>
+</p>
+<p></span></p>
+</div>
+<center>
+<img src="img/mission-creek-fim.gif" /><!-- -->
+</center>
 </div>
 
 
