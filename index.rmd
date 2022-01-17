@@ -4,10 +4,55 @@ title: "About Me"
   
 <center>
 # Hi, I'm Jiwon Baik.
-![downloaded image](img/profile.jpg)
-</center>
+![](img/profile.jpg)
+
   
-[Lorem ipsum]
+  
+---
+
+Hi, my name is Jiwon Baik.
+
+Thank you for visiting my portfolio webpage :)
+
+---
+
+</center>
+
+
+* Education
+
+I'm a master student in UCSB, studying Geography and Applied Statistics.
+
+I finished master in Geography with an emphasis on spatial optimization in 2021.
+
+I'll finish another master in Applied Statistics on June, 2022.
+
+
+* Projects
+
+I am proficient in Python, and R.
+
+I've done 3D spatial modeling, 
+
+In the [Portfolio](https://JiwonBaik96.github.io/portfolio.html) page, you could read details and source codes of my projects.
+
+
+* Teaching 
+
+My undergrad major was Geography and Education. 
+
+I taught GIS (Geographic Information Science) using ArcGIS Pro and R. 
+
+I'm the best evaluated TA in the Geography department, and having national teacher's license in Korea.
+
+
+* Hobbies
+
 I enjoy surfing, poker and baking.
 
+if you want to know personal me, you can visit my instagram.
 
+instagram: @miracle_jay0____0
+(https://www.instagram.com/miracle_jay0____0)
+
+---

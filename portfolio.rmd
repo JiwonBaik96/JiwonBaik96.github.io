@@ -1,42 +1,186 @@
 ---
-title: "Projects"
+title: "Portfolio"
+output:
+  html_document:
+    theme: paper
+    toc: true
+    toc_float: true
+    collapsed: false
+---
+
+---
+
+## Contents
+
+* 3D Map Features and Spatial Modeling
+  - 1.1. 3d Acoustic Propagation Modeling (ongoing)
+  - 1.2. lab project: LIDAR
+
+<br>
+
+* Javascript Map API and Web Building
+  - 2.1. Location based Theater and Movie finder
+
+<br>
+
+* Python Visualization and Spatial Optimization
+  - 3.1. Fire Evacuation Maps (ongoing)
+  - 3.2. Interactive map of Pareto Optimal solutions
+  - 3.3. Finding Optimal Locations of Street Lights in LA
+
+<br> 
+
+* Spatial Statistical Analysis
+  - 4.1. GWR, Spatio-temporal Krigging, and Spline on Air Pollutants from Remote Sensed Data
+  - 4.2. 2016 Election data analysis
+
+
+
 ---
 
 
+## 1. 3D Map Features and Spatial Modeling
 
 
-## 3d Acoustic Propagation Modeling
+---
+
+### 1.1. 3d Acoustic Propagation Modeling
+
+
 - [presentation](data/Sound_Propagation_Model.pdf)
+- [sourcecode](data/SoundPropagation.html) : The sourcecode relies on arcpy module. The ipynb file should be operated within ArcGIS Pro, as an inserted Notebook.
+
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-top:1em; text-align:center'>
+<b>On the importance of sentence length</b></p>
+<p style='margin-left:1em;'>
+This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
+    Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
+</p>
+<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+</p></span>
+</div>
 
 
+<center>
+
+![3d buildings](img/sound/3dbuildings.PNG)
+
+![3dmap](img/sound/3dmap.PNG)
+
+![model](img/sound/model.PNG)
+
+![result](img/sound/result.PNG)
+
+</center>
+
+---
+
+## 2. Javascript Map API and Web Building
+
+---
+
+### 2.1. Location based Theater and Movie finder
+
+#### [Team project]
+
+- [moviestock website](https://moviestock.herokuapp.com/movies/){target="_blank"}
 
 
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-top:1em; text-align:center'>
+<b>On the importance of sentence length</b></p>
+<p style='margin-left:1em;'>
+This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
+    Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
+</p>
+<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+</p></span>
+</div>
+
+---
 
 
+## 3. Python Visualization and Spatial Optimization
 
-## Location based Theater and Movie finder
+---
 
+### 3.1. Fire Evacuation Maps
+- [presentation](data/FireEvacuation_ppt.pdf)
+- [report](data/FireEvacuation_report.pdf)
 
-## Fire Evacuation Maps
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-top:1em; text-align:center'>
+<b>On the importance of sentence length</b></p>
+<p style='margin-left:1em;'>
+This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
+    Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
+</p>
+<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+</p></span>
+</div>
+
+![network processing](img/fire/network.PNG)
+
 ```{r echo=FALSE}
 knitr::include_graphics("data/1_staggered.gif")
 ```
 
 
-## Interactive map of Pareto Optimal solutions
+---
+
+### 3.2. Interactive map of Pareto Optimal solutions
 
 
-## Geographic Weighted Regression of AODs using Remote Sense Data
-- [report](data/GWR_Spline.pdf)
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-top:1em; text-align:center'>
+<b>On the importance of sentence length</b></p>
+<p style='margin-left:1em;'>
+This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
+    Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
+</p>
+<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+</p></span>
+</div>
 
-## 2016 Election data analysis
 
-- [sourcecode](data/2016ElectionCodes.html)
-- [report](data/2016ElectionReport.pdf)
+![nondominated](img/thesis/nondominated.png)]
+![solution algorithm](img/thesis/nondominated.png)]
+
+```{r, echo=FALSE}
+#htmltools::includeHTML("index.html")
+```
 
 
-## Finding Optimal Locations of Street Lights in LA
+
+---
+
+### 3.3. Finding Optimal Locations of Street Lights in LA
 - [sourcecode](data/StreetLightAllocation.html)
+
+Interactive maps can be found within the sourcecode
+
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-top:1em; text-align:center'>
+<b>On the importance of sentence length</b></p>
+<p style='margin-left:1em;'>
+This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
+    Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
+</p>
+<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+</p></span>
+</div>
+
+
+![studyregion](img/streetlight/studyregion.jpg)
+![ACLPresult](img/streetlight/ACLPresult.png)
+
+Detailed explanation with the sourcecodes can be found within the video below.
 
 <center>
 <video width="480" height="320" controls>
@@ -44,4 +188,68 @@ knitr::include_graphics("data/1_staggered.gif")
 </video>
 </center>
 
+---
 
+
+
+---
+
+## 4. Spatial Statistical Analysis
+
+
+---
+
+### 4.1. GWR and Spline on Air Pollutants from Remote Sensed Data
+
+#### [Team project]
+
+- [report](data/GWR_Spline.pdf)
+
+
+
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-top:1em; text-align:center'>
+<b>On the importance of sentence length</b></p>
+<p style='margin-left:1em;'>
+This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
+    Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
+</p>
+<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+</p></span>
+</div>
+
+![spatio-temporal krigging variograms](img/krigging/variograms.png)
+![result plot](img/krigging/result.png)
+![result table](img/krigging/resulttable.png)
+![ROOCV](img/krigging/ROOCV.png)
+
+
+
+### 4.2. 2016 Election data analysis
+
+#### [Team project]
+
+- [sourcecode](data/2016ElectionCodes.html)
+- [report](data/2016ElectionReport.pdf)
+
+
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-top:1em; text-align:center'>
+<b>On the importance of sentence length</b></p>
+<p style='margin-left:1em;'>
+This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
+    Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
+</p>
+<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+</p></span>
+</div>
+
+<center>
+
+![](img/election/winnermap.PNG)
+![](img/election/winningprob.PNG)
+![](img/election/hierarchicalClustering.PNG)
+
+</center>

@@ -1,9 +1,57 @@
+---
+title:"Resume"
+---
 
 
 
 
-```{r out.height = "100%", out.width="80%", echo=F}
+<center>
+# Hi, I'm Jiwon Baik.
+![downloaded image](img/profile.jpg)
 
-library(knitr)
-knitr::include_graphics("data/Resume_JiwonBaik-1.jpg")
+  
+  
+---
+
+Hi, my name is Jiwon Baik.
+
+Thank you for visiting my portfolio webpage :)
+
+---
+
+</center>
+
+
+* Education
+
+I'm a master student in UCSB, studying Geography and Applied Statistics.
+
+I finished master in Geography with an emphasis on spatial optimization in 2021.
+
+I'll finish another master in Applied Statistics on June, 2022.
+
+
+* Teaching 
+
+My undergrad major was Geography and Education. 
+
+I taught GIS (Geographic Information Science) using ArcGIS Pro and R. 
+
+I'm the best evaluated TA in the Geography department, and having national teacher's license in Korea.
+
+
+* Hobbies
+
+I enjoy surfing, poker and baking.
+
+if you want to know personal me, you can visit my instagram.
+
+instagram: @miracle_jay0____0
+(https://www.instagram.com/miracle_jay0____0)
+
+---
+
+
+```{r, echo=FALSE}
+htmltools::includeHTML("data/Resume_JiwonBaik.html")
 ```

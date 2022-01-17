@@ -10,13 +10,14 @@ navbar:
       href: portfolio.html
     - text: "GIS Teaching"
       href: teaching.html
-    - text: "Resume"
-      href: data/Resume_JiwonBaik.html
     - text: "Contact"
       href: contact.html
+    - text: "Resume"
+      href: resume.html
+
   right:
     - icon: fa-rocket
       href: https://github.com/JiwonBaik96
 output:
   html_document:
-    theme: simplex
+    theme: paper
