@@ -34,8 +34,7 @@ I am proficient in Python, and R.
 
 I've done 3D spatial modeling, 
 
-In the [Portfolio](https://JiwonBaik96.github.io/portfolio.html) page, you could read details and source codes of my projects.
-
+In the [Portfolio](https://jiwonbaik96.github.io/portfolio.html) page, you could read details and source codes of my projects.
 
 * Teaching 
 
@@ -52,7 +51,6 @@ I enjoy surfing, poker and baking.
 
 if you want to know personal me, you can visit my instagram.
 
-instagram: @miracle_jay0____0
-(https://www.instagram.com/miracle_jay0____0)
+instagram: [@miracle_jay0____0](https://www.instagram.com/miracle_jay0____0)
 
 ---
