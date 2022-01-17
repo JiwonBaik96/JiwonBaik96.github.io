@@ -44,6 +44,8 @@ I taught GIS (Geographic Information Science) using ArcGIS Pro and R.
 
 I'm the best evaluated TA in the Geography department, and having national teacher's license in Korea.
 
+In the [GIS Teaching](https://jiwonbaik96.github.io/teaching.html) page, you could read details and source codes of the labs I taught.
+
 
 * Hobbies
 
