@@ -188,6 +188,8 @@ a.em {
 </div>
 
 
+![](img/moviestock/map.PNG)
+
 
 
 
