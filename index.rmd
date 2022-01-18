@@ -19,7 +19,7 @@ Thank you for visiting my portfolio webpage :)
 </center>
 
 
-* Education
+## <b>Education</b>
 
 I'm a master student in UCSB, studying Geography and Applied Statistics.
 
@@ -28,15 +28,19 @@ I finished master in Geography with an emphasis on spatial optimization in 2021.
 I'll finish another master in Applied Statistics on June, 2022.
 
 
-* Projects
+---
+
+## <b>Projects</b>
 
 I am proficient in Python, and R.
 
-I've done 3D spatial modeling, 
+I've done 3D spatial modeling, spatial optimization, geo-statistical analysis.
 
 In the [Portfolio](https://jiwonbaik96.github.io/portfolio.html) page, you could read details and source codes of my projects.
 
-* Teaching 
+---
+
+## <b>Teaching </b>
 
 My undergrad major was Geography and Education. 
 
@@ -47,12 +51,14 @@ I'm the best evaluated TA in the Geography department, and having national teach
 In the [GIS Teaching](https://jiwonbaik96.github.io/teaching.html) page, you could read details and source codes of the labs I taught.
 
 
-* Hobbies
+---
+
+## <b>Hobbies</b>
 
 I enjoy surfing, poker and baking.
 
 if you want to know personal me, you can visit my instagram.
 
-instagram: [@miracle_jay0____0](https://www.instagram.com/miracle_jay0____0)
+instagram: @ [miracle_jay0____0](https://www.instagram.com/miracle_jay0____0)
 
 ---
