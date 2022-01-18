@@ -8,6 +8,14 @@ output:
     collapsed: false
 ---
 
+```{css, echo=FALSE}
+a.em {
+  font-size: 20px;
+  background-color: #F6FF9B;
+}
+```
+
+
 ---
 
 ## Contents
@@ -24,8 +32,8 @@ output:
   - 3.2. Interactive map of Pareto Optimal solutions
   - 3.3. Finding Optimal Locations of Street Lights in LA
 
-* Spatial Statistical Analysis
-  - 4.1. GWR, Spatio-temporal Krigging, and Spline on Air Pollutants from Remote Sensed Data
+* Geo-statistical Analysis
+  - 4.1. GWR, Spatio-Temporal Krigging, and Spline
   - 4.2. 2016 Election data analysis
 
 
@@ -42,8 +50,8 @@ output:
 
 #### [Ongoing]
 
-- [presentation](data/Sound_Propagation_Model.pdf)
-- [sourcecode](data/SoundPropagation.html) : The sourcecode relies on arcpy module. The ipynb file should be operated within ArcGIS Pro, as an inserted Notebook.
+- <i class="fas fa-book-open"></i>  [Presentation](data/Sound_Propagation_Model.pdf){target="_blank" class="em"}
+- <i class="fas fa-desktop"></i> [Sourcecode](data/SoundPropagation.html){target="_blank" class="em"} : The sourcecode relies on arcpy module. The ipynb file should be operated within ArcGIS Pro, as an inserted Notebook.
 
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
 <span>
@@ -51,25 +59,71 @@ output:
 <b>3d Acoustic Propagation Modeling</b></p>
 <p style='margin-left:1em;'>
 
-This project is to 
-
+* This project is to model the sound propagation from the outdoor emergency sirens on the UCSB campus.
+* The 3D building representation and detailed terrain elevation with vegetation height included were obtained from LIDAR pointcloud data.
+* Each building has it's shape refined by using the <b>SketchUp</b> software. Building material and area of window information was added by the software, too.
 </p>
-<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
-</p></span>
+</span>
 </div>
 
 
 <center>
-
-![3d buildings](img/sound/3dbuildings.PNG)
-
-![3dmap](img/sound/3dmap.PNG)
-
-![model](img/sound/model.PNG)
-
-![result](img/sound/result.PNG)
-
+![3D buildings from LIDAR dataset](img/sound/3dbuildings.PNG)
 </center>
+
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-left:1em;'>
+
+* Firstly, straight 3d sightline was used to delineate the shortest path between a siren and a receiver location.
+
+* The 3d intersection points of the sightlines and buildings were used to calculate the diffraction effect. Though the diffraction path is not geometrically represented.
+
+</p>
+</span>
+</div>
+
+
+<center>
+![3dmap](img/sound/3dmap.PNG)
+</center>
+
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-left:1em;'>
+
+* The table below includes the equations and sound effects each equation is calculating. 
+* They are used to calculate the decible delivered to the receiver point from each siren. 
+* The equations are from the ISO 9613 (with Joule’s Report edition), and NMPB 2008 models.
+
+
+</p>
+</span>
+</div>
+
+<center>
+![Model Summary](img/sound/model.PNG)
+</center>
+
+
+<div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
+<span>
+<p style='margin-left:1em;'>
+
+* The plot below shows the sound propagation model result compared to the actual sound measurement at each receiver location. There were 29 receiver sample points. 
+* The model result represented in the blue line corresponds with the oragne line, measurement result very well. 
+* The mean of the decibel difference was 0.64 and most of the observations were within the 95% confidence interval. 
+
+
+</p>
+</span>
+</div>
+
+
+<center>
+![result](img/sound/result.PNG)
+</center>
+
 
 ---
 
@@ -77,29 +131,30 @@ This project is to
 ### 1.2. Extracting Indoor Details from LIDAR pointcloud
 #### [Lab project]
 
-* [presentation](data/lidar.pdf)
+* <i class="fas fa-book-open"></i> 
+ [Presentation](data/lidar.pdf){target="_blank" class="em"}
 
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
 <span>
 <p style='margin-top:1em; text-align:center'>
-<b>On the importance of sentence length</b></p>
+<b>Extracting Indoor Details from LIDAR pointcloud</b></p>
 <p style='margin-left:1em;'>
-This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
-    Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
+* This project is going on within my lab, so it's not my personal project.
+* The indoor LIDAR pointcloud is to be segmented, and interpreted to read indoor context. 
+* Different types of Deep Neural Network models were tested.(Vanilla PointNet, PointNet, PointNet++) 
+* 3D objects can be distinguished and labeled as a result.
+* The project is halted due to lack of data. Indoor LIDAR pointcloud data is not sufficient and very often, it is not labeled.
 </p>
-<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
-</p></span>
+</span>
 </div>
-
-
 
 <center>
 
-![3dmap](img/lidar/data.jpg)
+![LIDAR pointcloud](img/lidar/data.jpg)
 
-![model](img/lidar/segmentation.jpg)
+![Segmentation Result](img/lidar/segmentation.jpg)
 
-![result](img/lidar/3d.jpg)
+![3D Objects distinguished from the Segmentation Results](img/lidar/3d.jpg)
 
 </center>
 
@@ -111,22 +166,32 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 
 ### 2.1. Location based Theater and Movie finder
 
-#### [Team project]
+#### [2-people Team project]
 
-- [moviestock website](https://moviestock.herokuapp.com/movies/){target="_blank"}: it takes awhile to load the homepage as using free hosting by Heroku.
+- <i class="fas fa-box-open"></i> [MovieStock Website](https://moviestock.herokuapp.com/movies/){target="_blank" class="em"}: it takes a while to load as using free hosting by Heroku.
 
+- <i class="fas fa-desktop"></i> [Sourcecode](){target="_blank" class="em"}
 
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
 <span>
 <p style='margin-top:1em; text-align:center'>
-<b>On the importance of sentence length</b></p>
+<b>Location based Theater and Movie finder</b></p>
 <p style='margin-left:1em;'>
 This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
     Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
 </p>
-<p style='margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia'> <b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
-</p></span>
+</span>
 </div>
+
+
+
+<center>
+<video width="480" height="320" controls>
+  <source src="data/StreetLightAllocation.mp4" type="video/mp4">
+</video>
+</center>
+
+
 
 ---
 
@@ -137,9 +202,9 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 
 ---
 
-### 3.1. Fire Evacuation Maps
-- [presentation](data/FireEvacuation_ppt.pdf)
-- [report](data/FireEvacuation_report.pdf)
+### 3.1. Optimal Fire Evacuation Maps
+- <i class="fas fa-book-open"></i>   [Presentation](data/FireEvacuation_ppt.pdf){target="_blank" class="em"}
+- <i class="fas fa-edit"></i> [Report](data/FireEvacuation_report.pdf){target="_blank" class="em"}
 
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
 <span>
@@ -164,8 +229,8 @@ knitr::include_graphics("data/1_staggered.gif")
 
 ### 3.2. Interactive map of Pareto Optimal solutions
 
-* [solution algorithm](data/swain_sourcecode.html)
-* [interactive map](data/swain_solutions.html)
+* <i class="fas fa-desktop"></i> [Sourcecode](data/swain_sourcecode.html){target="_blank" class="em"}
+* <i class="fas fa-book-open"></i>  [Interactive Map](data/swain_solutions.html){target="_blank" class="em"}
 
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
 <span>
@@ -186,7 +251,7 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 ---
 
 ### 3.3. Finding Optimal Locations of Street Lights in LA
-- [sourcecode](data/StreetLightAllocation.html)
+- <i class="fas fa-desktop"></i> [Sourcecode](data/StreetLightAllocation.html){target="_blank" class="em"}
 
 Interactive maps can be found within the sourcecode
 
@@ -220,16 +285,16 @@ Detailed explanation with the sourcecodes can be found within the video below.
 
 ---
 
-## 4. Spatial Statistical Analysis
+## 4. Geo-Statistical Analysis
 
 
 ---
 
-### 4.1. GWR and Spline on Air Pollutants from Remote Sensed Data
+### 4.1. GWR, Spatio-Temporal Krigging, and Spline
 
-#### [Team project]
+#### [4-people Team project]
 
-- [report](data/GWR_Spline.pdf)
+- <i class="fas fa-edit"></i> [Report](data/GWR_Spline.pdf){target="_blank" class="em"}
 
 
 
@@ -254,10 +319,10 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 
 ### 4.2. 2016 Election data analysis
 
-#### [Team project]
+#### [2-people Team project]
 
-- [sourcecode](data/2016ElectionCodes.html)
-- [report](data/2016ElectionReport.pdf)
+- <i class="fas fa-desktop"></i> [Sourcecode](data/2016ElectionCodes.html){target="_blank" class="em"}
+- <i class="fas fa-edit"></i> [Report](data/2016ElectionReport.pdf){target="_blank" class="em"}
 
 
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>

@@ -359,6 +359,12 @@ div.tocify {
 </div>
 
 
+<style type="text/css">
+a.em {
+  font-size: 20px;
+  background-color: #F6FF9B;
+}
+</style>
 <hr />
 <div id="contents" class="section level2">
 <h2>Contents</h2>
@@ -378,9 +384,9 @@ div.tocify {
 <li>3.2. Interactive map of Pareto Optimal solutions</li>
 <li>3.3. Finding Optimal Locations of Street Lights in LA</li>
 </ul></li>
-<li>Spatial Statistical Analysis
+<li>Geo-statistical Analysis
 <ul>
-<li>4.1. GWR, Spatio-temporal Krigging, and Spline on Air Pollutants from Remote Sensed Data</li>
+<li>4.1. GWR, Spatio-Temporal Krigging, and Spline</li>
 <li>4.2. 2016 Election data analysis</li>
 </ul></li>
 </ul>
@@ -394,8 +400,8 @@ div.tocify {
 <div id="ongoing" class="section level4">
 <h4>[Ongoing]</h4>
 <ul>
-<li><a href="data/Sound_Propagation_Model.pdf">presentation</a></li>
-<li><a href="data/SoundPropagation.html">sourcecode</a> : The sourcecode relies on arcpy module. The ipynb file should be operated within ArcGIS Pro, as an inserted Notebook.</li>
+<li><i class="fas fa-book-open"></i> <a href="data/Sound_Propagation_Model.pdf" class="em" target="_blank">Presentation</a></li>
+<li><i class="fas fa-desktop"></i> <a href="data/SoundPropagation.html" class="em" target="_blank">Sourcecode</a> : The sourcecode relies on arcpy module. The ipynb file should be operated within ArcGIS Pro, as an inserted Notebook.</li>
 </ul>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
@@ -403,30 +409,57 @@ div.tocify {
 <b>3d Acoustic Propagation Modeling</b>
 </p>
 <p style="margin-left:1em;">
-<p>This project is to</p>
-</p>
-<p style="margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia">
-<b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+<ul>
+<li>This project is to model the sound propagation from the outdoor emergency sirens on the UCSB campus.</li>
+<li>The 3D building representation and detailed terrain elevation with vegetation height included were obtained from LIDAR pointcloud data.</li>
+<li>Each building has it’s shape refined by using the <b>SketchUp</b> software. Building material and area of window information was added by the software, too.</li>
+</ul>
 </p>
 <p></span></p>
 </div>
 <center>
-<div class="figure">
-<img src="img/sound/3dbuildings.PNG" alt="" />
-<p class="caption">3d buildings</p>
+<img src="img/sound/3dbuildings.PNG" title="fig:" alt="3D buildings from LIDAR dataset" />
+</center>
+<div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
+<span>
+<p style="margin-left:1em;">
+<ul>
+<li><p>Firstly, straight 3d sightline was used to delineate the shortest path between a siren and a receiver location.</p></li>
+<li><p>The 3d intersection points of the sightlines and buildings were used to calculate the diffraction effect. Though the diffraction path is not geometrically represented.</p></li>
+</ul>
+</p>
+<p></span></p>
 </div>
-<div class="figure">
-<img src="img/sound/3dmap.PNG" alt="" />
-<p class="caption">3dmap</p>
+<center>
+<img src="img/sound/3dmap.PNG" title="fig:" alt="3dmap" />
+</center>
+<div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
+<span>
+<p style="margin-left:1em;">
+<ul>
+<li>The table below includes the equations and sound effects each equation is calculating.</li>
+<li>They are used to calculate the decible delivered to the receiver point from each siren.</li>
+<li>The equations are from the ISO 9613 (with Joule’s Report edition), and NMPB 2008 models.</li>
+</ul>
+</p>
+<p></span></p>
 </div>
-<div class="figure">
-<img src="img/sound/model.PNG" alt="" />
-<p class="caption">model</p>
+<center>
+<img src="img/sound/model.PNG" title="fig:" alt="Model Summary" />
+</center>
+<div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
+<span>
+<p style="margin-left:1em;">
+<ul>
+<li>The plot below shows the sound propagation model result compared to the actual sound measurement at each receiver location. There were 29 receiver sample points.</li>
+<li>The model result represented in the blue line corresponds with the oragne line, measurement result very well.</li>
+<li>The mean of the decibel difference was 0.64 and most of the observations were within the 95% confidence interval.</li>
+</ul>
+</p>
+<p></span></p>
 </div>
-<div class="figure">
-<img src="img/sound/result.PNG" alt="" />
-<p class="caption">result</p>
-</div>
+<center>
+<img src="img/sound/result.PNG" title="fig:" alt="result" />
 </center>
 <hr />
 </div>
@@ -436,33 +469,36 @@ div.tocify {
 <div id="lab-project" class="section level4">
 <h4>[Lab project]</h4>
 <ul>
-<li><a href="data/lidar.pdf">presentation</a></li>
+<li><i class="fas fa-book-open"></i> <a href="data/lidar.pdf" class="em" target="_blank">Presentation</a></li>
 </ul>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
 <p style="margin-top:1em; text-align:center">
-<b>On the importance of sentence length</b>
+<b>Extracting Indoor Details from LIDAR pointcloud</b>
 </p>
 <p style="margin-left:1em;">
-This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It’s like a stuck record. The ear demands some variety.<br><br> Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals – sounds that say listen to this, it is important.
-</p>
-<p style="margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia">
-<b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+<ul>
+<li>This project is going on within my lab, so it’s not my personal project.</li>
+<li>The indoor LIDAR pointcloud is to be segmented, and interpreted to read indoor context.</li>
+<li>Different types of Deep Neural Network models were tested.(Vanilla PointNet, PointNet, PointNet++)</li>
+<li>3D objects can be distinguished and labeled as a result.</li>
+<li>The project is halted due to lack of data. Indoor LIDAR pointcloud data is not sufficient and very often, it is not labeled.</li>
+</ul>
 </p>
 <p></span></p>
 </div>
 <center>
 <div class="figure">
 <img src="img/lidar/data.jpg" alt="" />
-<p class="caption">3dmap</p>
+<p class="caption">LIDAR pointcloud</p>
 </div>
 <div class="figure">
 <img src="img/lidar/segmentation.jpg" alt="" />
-<p class="caption">model</p>
+<p class="caption">Segmentation Result</p>
 </div>
 <div class="figure">
 <img src="img/lidar/3d.jpg" alt="" />
-<p class="caption">result</p>
+<p class="caption">3D Objects distinguished from the Segmentation Results</p>
 </div>
 </center>
 <hr />
@@ -474,24 +510,27 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 <hr />
 <div id="location-based-theater-and-movie-finder" class="section level3">
 <h3>2.1. Location based Theater and Movie finder</h3>
-<div id="team-project" class="section level4">
-<h4>[Team project]</h4>
+<div id="people-team-project" class="section level4">
+<h4>[2-people Team project]</h4>
 <ul>
-<li><a href="https://moviestock.herokuapp.com/movies/" target="_blank">moviestock website</a>: it takes awhile to load the homepage as using free hosting by Heroku.</li>
+<li><p><i class="fas fa-box-open"></i> <a href="https://moviestock.herokuapp.com/movies/" class="em" target="_blank">MovieStock Website</a>: it takes a while to load as using free hosting by Heroku.</p></li>
+<li><p><i class="fas fa-desktop"></i> <a href="" class="em" target="_blank">Sourcecode</a></p></li>
 </ul>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
 <p style="margin-top:1em; text-align:center">
-<b>On the importance of sentence length</b>
+<b>Location based Theater and Movie finder</b>
 </p>
 <p style="margin-left:1em;">
 This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It’s like a stuck record. The ear demands some variety.<br><br> Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals – sounds that say listen to this, it is important.
 </p>
-<p style="margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia">
-<b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
-</p>
 <p></span></p>
 </div>
+<center>
+<video width="480" height="320" controls>
+<source src="data/StreetLightAllocation.mp4" type="video/mp4">
+</video>
+</center>
 <hr />
 </div>
 </div>
@@ -502,11 +541,11 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 <h4>[Ongoing]</h4>
 <hr />
 </div>
-<div id="fire-evacuation-maps" class="section level3">
-<h3>3.1. Fire Evacuation Maps</h3>
+<div id="optimal-fire-evacuation-maps" class="section level3">
+<h3>3.1. Optimal Fire Evacuation Maps</h3>
 <ul>
-<li><a href="data/FireEvacuation_ppt.pdf">presentation</a></li>
-<li><a href="data/FireEvacuation_report.pdf">report</a></li>
+<li><i class="fas fa-book-open"></i> <a href="data/FireEvacuation_ppt.pdf" class="em" target="_blank">Presentation</a></li>
+<li><i class="fas fa-edit"></i> <a href="data/FireEvacuation_report.pdf" class="em" target="_blank">Report</a></li>
 </ul>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
@@ -531,8 +570,8 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 <div id="interactive-map-of-pareto-optimal-solutions" class="section level3">
 <h3>3.2. Interactive map of Pareto Optimal solutions</h3>
 <ul>
-<li><a href="data/swain_sourcecode.html">solution algorithm</a></li>
-<li><a href="data/swain_solutions.html">interactive map</a></li>
+<li><i class="fas fa-desktop"></i> <a href="data/swain_sourcecode.html" class="em" target="_blank">Sourcecode</a></li>
+<li><i class="fas fa-book-open"></i> <a href="data/swain_solutions.html" class="em" target="_blank">Interactive Map</a></li>
 </ul>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
@@ -553,7 +592,7 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 <div id="finding-optimal-locations-of-street-lights-in-la" class="section level3">
 <h3>3.3. Finding Optimal Locations of Street Lights in LA</h3>
 <ul>
-<li><a href="data/StreetLightAllocation.html">sourcecode</a></li>
+<li><i class="fas fa-desktop"></i> <a href="data/StreetLightAllocation.html" class="em" target="_blank">Sourcecode</a></li>
 </ul>
 <p>Interactive maps can be found within the sourcecode</p>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
@@ -580,15 +619,15 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 <hr />
 </div>
 </div>
-<div id="spatial-statistical-analysis" class="section level2">
-<h2>4. Spatial Statistical Analysis</h2>
+<div id="geo-statistical-analysis" class="section level2">
+<h2>4. Geo-Statistical Analysis</h2>
 <hr />
-<div id="gwr-and-spline-on-air-pollutants-from-remote-sensed-data" class="section level3">
-<h3>4.1. GWR and Spline on Air Pollutants from Remote Sensed Data</h3>
-<div id="team-project-1" class="section level4">
-<h4>[Team project]</h4>
+<div id="gwr-spatio-temporal-krigging-and-spline" class="section level3">
+<h3>4.1. GWR, Spatio-Temporal Krigging, and Spline</h3>
+<div id="people-team-project-1" class="section level4">
+<h4>[4-people Team project]</h4>
 <ul>
-<li><a href="data/GWR_Spline.pdf">report</a></li>
+<li><i class="fas fa-edit"></i> <a href="data/GWR_Spline.pdf" class="em" target="_blank">Report</a></li>
 </ul>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
@@ -608,11 +647,11 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 </div>
 <div id="election-data-analysis" class="section level3">
 <h3>4.2. 2016 Election data analysis</h3>
-<div id="team-project-2" class="section level4">
-<h4>[Team project]</h4>
+<div id="people-team-project-2" class="section level4">
+<h4>[2-people Team project]</h4>
 <ul>
-<li><a href="data/2016ElectionCodes.html">sourcecode</a></li>
-<li><a href="data/2016ElectionReport.pdf">report</a></li>
+<li><i class="fas fa-desktop"></i> <a href="data/2016ElectionCodes.html" class="em" target="_blank">Sourcecode</a></li>
+<li><i class="fas fa-edit"></i> <a href="data/2016ElectionReport.pdf" class="em" target="_blank">Report</a></li>
 </ul>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
