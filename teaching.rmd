@@ -28,7 +28,7 @@ output:
 
 ## 1. COVID-19 Data Wrangling
 
-* [sourcecode](https://jiwonbaik96.github.io/geog-13-labs/docs/lab-02.html){target="_blank"}
+* <i class="fas fa-desktop"></i> [sourcecode](https://jiwonbaik96.github.io/geog-13-labs/docs/lab-02.html){target="_blank"}
 
 
 <div class="warning" style='padding:0.5em; background-color:#DAF2D3; color:#478432'>
@@ -60,7 +60,7 @@ across U.S. counties, working primarily with daily new cases, total case counts,
 
 ## 2. Distances and the Border Zone
 
-* [sourcecode](https://jiwonbaik96.github.io/geog-13-labs/docs/lab-03.html){target="_blank"}
+* <i class="fas fa-desktop"></i> [sourcecode](https://jiwonbaik96.github.io/geog-13-labs/docs/lab-03.html){target="_blank"}
 
 <div class="warning" style='padding:0.5em; background-color:#DAF2D3; color:#478432'>
 <span>
@@ -92,7 +92,7 @@ In the **lab03**, students figured out the geographic relationship between US ci
 ## 3. Tesselations, Point-in-Polygon
 
 
-* [sourcecode](https://jiwonbaik96.github.io/geog-13-labs/docs/lab-04.html){target="_blank"}
+* <i class="fas fa-desktop"></i> [sourcecode](https://jiwonbaik96.github.io/geog-13-labs/docs/lab-04.html){target="_blank"}
 
 <div class="warning" style='padding:0.5em; background-color:#DAF2D3; color:#478432'>
 <span>
@@ -128,7 +128,7 @@ In the **lab04**, students started to analyze the geographic points in the polyg
 
 ## 4. Raster and Remote Sensing
 
-* [sourcecode](https://jiwonbaik96.github.io/geog-13-labs/docs/lab-05.html){target="_blank"}
+* <i class="fas fa-desktop"></i> [sourcecode](https://jiwonbaik96.github.io/geog-13-labs/docs/lab-05.html){target="_blank"}
 
 <div class="warning" style='padding:0.5em; background-color:#DAF2D3; color:#478432'>
 <span>
