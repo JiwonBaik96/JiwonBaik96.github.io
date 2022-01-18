@@ -32,7 +32,7 @@ a.em {
 
 * Geo-statistical Analysis
   - 4.1. GWR, Spatio-Temporal Krigging, and Spline
-  - 4.2. 2016 Presidential Election data analysis
+  - 4.2. 2016 Presidential Election Data Analysis
 
 ---
 
@@ -167,24 +167,27 @@ a.em {
 - <i class="fas fa-box-open"></i> [MovieStock Website](https://moviestock.herokuapp.com/movies/){target="_blank" class="em"}: it takes a while to load as using free hosting by Heroku.
 - <i class="fas fa-desktop"></i> [Sourcecode](){target="_blank" class="em"}
 
+<center>
+<video width="480" height="320" controls>
+  <source src="data/moviestock.mp4" type="video/mp4">
+</video>
+</center>
+
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
 <span>
 <p style='margin-top:1em; text-align:center'>
 <b>Location based Theater and Movie finder</b></p>
 <p style='margin-left:1em;margin-right:1em;'>
-This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.<br><br>
-    Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals -- sounds that say listen to this, it is important.
+* The mock-up website build project got the first prize out of 100+ teams in Samsung Software Academy.
+* Please note that it's built within a week from a blank HTML. 
+* Whole project ideas came from me, not given.
+* The Location tab as the Javascript Map API to find the nearest theaters and the real-time reservation info of the movies.
+* The interactive UI on the map has more things to be considered rather than any UIs out of the map. The map bounds, pop-up location, and marker sizes based on the zoom level were carefully considered.
 </p>
 </span>
 </div>
 
 
-
-<center>
-<video width="480" height="320" controls>
-  <source src="data/StreetLightAllocation.mp4" type="video/mp4">
-</video>
-</center>
 
 
 
@@ -342,7 +345,8 @@ knitr::include_graphics("data/1_staggered.gif")
 <b>GWR, Spatio-Temporal Krigging, and Spline</b></p>
 <p style='margin-left:1em;margin-right:1em;'>
 * This project was to apply three different geo-statistical methods to a large remotely sensed dataset to explain the spatial distribution of air pollutant, $PM_{2.5}$.
-* Linear Mixed Effect Model was used as the primary method to predict $PM_{2.5}$ values. Then, for the residuals, geo-spatial models were applied to take spatial context into account. 
+* Linear Mixed Effect Model was used as the primary method to predict $PM_{2.5}$ values. Then, for the residuals, geo-spatial models were applied to take spatial context into account.
+* Whole project was conducted in R.
 * I took three parts. Spatio-Temporal Krigging, Spatil Leave One Out Cross-Validations(LOOCV), and map plotting parts. All the maps and plots in the [Report](data/GWR_Spline.pdf) were created by me.
 * The plot below shows the different types of variogram model considered to fit Spatio-Temporal Krigging model to the dataset. SumMetric model is selected, because it had the least mean absolute error compared to the sample variogram.
 </p></span>
@@ -395,7 +399,11 @@ estimates follow exactly the spatial patterns of the explanatory variable.
 </center>
 
 
-### 4.2. 2016 Presidential Election data analysis
+
+---
+
+
+### 4.2. 2016 Presidential Election Data Analysis
 
 #### [2-people Team project]
 
@@ -406,10 +414,12 @@ estimates follow exactly the spatial patterns of the explanatory variable.
 <div class="warning" style='padding:0.1em; background-color:#E9D8FD; color:#69337A'>
 <span>
 <p style='margin-top:1em; text-align:center'>
-<b>2016 Presidential Election data analysis</b></p>
+<b>2016 Presidential Election Data Analysis</b></p>
 <p style='margin-left:1em;margin-right:1em;'>
-
-
+* This project is to apply various statistical methods to 2016 Presidential Election Data, in order to predict who would win the vote. Hillary or Trump.
+* The project was coded in R.
+* Decision Tree, Logistic Regression, Hierarchical Clustering methods were used.
+* Maps were used to visualize the model results.
 </p></span>
 </div>
 

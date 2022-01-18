@@ -385,7 +385,7 @@ a.em {
 <li>Geo-statistical Analysis
 <ul>
 <li>4.1. GWR, Spatio-Temporal Krigging, and Spline</li>
-<li>4.2. 2016 Election data analysis</li>
+<li>4.2. 2016 Presidential Election Data Analysis</li>
 </ul></li>
 </ul>
 <hr />
@@ -514,21 +514,27 @@ a.em {
 <li><i class="fas fa-box-open"></i> <a href="https://moviestock.herokuapp.com/movies/" class="em" target="_blank">MovieStock Website</a>: it takes a while to load as using free hosting by Heroku.</li>
 <li><i class="fas fa-desktop"></i> <a href="" class="em" target="_blank">Sourcecode</a></li>
 </ul>
+<center>
+<video width="480" height="320" controls>
+<source src="data/moviestock.mp4" type="video/mp4">
+</video>
+</center>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
 <p style="margin-top:1em; text-align:center">
 <b>Location based Theater and Movie finder</b>
 </p>
 <p style="margin-left:1em;margin-right:1em;">
-This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It’s like a stuck record. The ear demands some variety.<br><br> Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals – sounds that say listen to this, it is important.
+<ul>
+<li>The mock-up website build project got the first prize out of 100+ teams in Samsung Software Academy.</li>
+<li>Please note that it’s built within a week from a blank HTML.</li>
+<li>Whole project ideas came from me, not given.</li>
+<li>The Location tab as the Javascript Map API to find the nearest theaters and the real-time reservation info of the movies.</li>
+<li>The interactive UI on the map has more things to be considered rather than any UIs out of the map. The map bounds, pop-up location, and marker sizes based on the zoom level were carefully considered.</li>
+</ul>
 </p>
 <p></span></p>
 </div>
-<center>
-<video width="480" height="320" controls>
-<source src="data/StreetLightAllocation.mp4" type="video/mp4">
-</video>
-</center>
 <hr />
 </div>
 </div>
@@ -562,10 +568,9 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 </p>
 <p></span></p>
 </div>
-<div class="figure">
-<img src="img/fire/network.PNG" alt="" />
-<p class="caption">original OSM dataset processed into forward-star network format with sourcenodes</p>
-</div>
+<center>
+<img src="img/fire/network.PNG" title="fig:" alt="original OSM dataset processed into forward-star network format with sourcenodes" />
+</center>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
 <p style="margin-left:1em;margin-right:1em;">
@@ -680,16 +685,16 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 <ul>
 <li>This project was to apply three different geo-statistical methods to a large remotely sensed dataset to explain the spatial distribution of air pollutant, <span class="math inline">\(PM_{2.5}\)</span>.</li>
 <li>Linear Mixed Effect Model was used as the primary method to predict <span class="math inline">\(PM_{2.5}\)</span> values. Then, for the residuals, geo-spatial models were applied to take spatial context into account.</li>
+<li>Whole project was conducted in R.</li>
 <li>I took three parts. Spatio-Temporal Krigging, Spatil Leave One Out Cross-Validations(LOOCV), and map plotting parts. All the maps and plots in the <a href="data/GWR_Spline.pdf">Report</a> were created by me.</li>
 <li>The plot below shows the different types of variogram model considered to fit Spatio-Temporal Krigging model to the dataset. SumMetric model is selected, because it had the least mean absolute error compared to the sample variogram.</li>
 </ul>
 </p>
 <p></span></p>
 </div>
-<div class="figure">
-<img src="img/krigging/variograms.png" alt="" />
-<p class="caption">spatio-temporal krigging variograms</p>
-</div>
+<center>
+<img src="img/krigging/variograms.png" title="fig:" alt="spatio-temporal krigging variograms" />
+</center>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
 <p style="margin-left:1em;margin-right:1em;">
@@ -702,7 +707,9 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 </p>
 <p></span></p>
 </div>
+<center>
 <img src="img/krigging/result.PNG" title="fig:" alt="result plot" />
+</center>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
 <p style="margin-left:1em;margin-right:1em;">
@@ -712,7 +719,9 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 </p>
 <p></span></p>
 </div>
+<center>
 <img src="img/krigging/resulttable.PNG" title="fig:" alt="result table" />
+</center>
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
 <p style="margin-left:1em;margin-right:1em;">
@@ -725,14 +734,14 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 </p>
 <p></span></p>
 </div>
-<div class="figure">
-<img src="img/krigging/ROOCV.PNG" alt="" />
-<p class="caption">The maps of Spatial LOOCV</p>
+<center>
+<img src="img/krigging/ROOCV.PNG" title="fig:" alt="The maps of Spatial LOOCV" />
+</center>
+<hr />
 </div>
 </div>
-</div>
-<div id="election-data-analysis" class="section level3">
-<h3>4.2. 2016 Election data analysis</h3>
+<div id="presidential-election-data-analysis" class="section level3">
+<h3>4.2. 2016 Presidential Election Data Analysis</h3>
 <div id="people-team-project-2" class="section level4">
 <h4>[2-people Team project]</h4>
 <ul>
@@ -742,13 +751,15 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 <div class="warning" style="padding:0.1em; background-color:#E9D8FD; color:#69337A">
 <span>
 <p style="margin-top:1em; text-align:center">
-<b>On the importance of sentence length</b>
+<b>2016 Presidential Election Data Analysis</b>
 </p>
 <p style="margin-left:1em;margin-right:1em;">
-This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It’s like a stuck record. The ear demands some variety.<br><br> Now listen. I vary the sentence length, and I create music. Music. The writing sings. It has a pleasent rhythm, a lilt, a harmony. I use short sentences. And I use sentences of medium length. And sometimes when I am certain the reader is rested, I will engage him with a sentence of considerable length, a sentence that burns with energy and builds with all the impetus of a crescendo, the roll of the drums, the crash of the cymbals – sounds that say listen to this, it is important.
-</p>
-<p style="margin-bottom:1em; margin-right:1em; text-align:right; font-family:Georgia">
-<b>- Gary Provost</b> <i>(100 Ways to Improve Your Writing, 1985)</i>
+<ul>
+<li>This project is to apply various statistical methods to 2016 Presidential Election Data, in order to predict who would win the vote. Hillary or Trump.</li>
+<li>The project was coded in R.</li>
+<li>Decision Tree, Logistic Regression, Hierarchical Clustering methods were used.</li>
+<li>Maps were used to visualize the model results.</li>
+</ul>
 </p>
 <p></span></p>
 </div>
