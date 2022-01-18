@@ -165,7 +165,7 @@ a.em {
 #### [2-people Team project]
 
 - <i class="fas fa-box-open"></i> [MovieStock Website](https://moviestock.herokuapp.com/movies/){target="_blank" class="em"}: it takes a while to load as using free hosting by Heroku.
-- <i class="fas fa-desktop"></i> [Sourcecode](): https://git.heroku.com/moviestock.git
+- <i class="fas fa-desktop"></i> Sourcecode: $ git clone https://git.heroku.com/moviestock.git
 
 <center>
 <video width="480" height="320" controls>
